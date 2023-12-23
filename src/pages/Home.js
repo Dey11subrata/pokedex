@@ -14,10 +14,12 @@ export const Home = () => {
   }, []);
   // console.log(pokemons);
   return (
-    <main>
-      {pokemons.map((pokemon) => (
-        <Card pokemon={pokemon} />
-      ))}
+    <main className="m-auto">
+      <div className="flex flex-wrap justify-between mx-2 px-1">
+        {pokemons.map((pokemon) => (
+          <Card key={pokemon.url} pokemon={pokemon} />
+        ))}
+      </div>
     </main>
   );
 };

@@ -1,10 +1,11 @@
 import "./App.css";
+import { Header } from "./components/Header";
 import { AllRoutes } from "./routes/AllRoutes";
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to Pokedesk</h1>
+      <Header />
       <AllRoutes />
     </div>
   );
